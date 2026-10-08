@@ -22,7 +22,7 @@
   .hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;min-height:0!important;height:auto!important;max-height:none!important;padding:0!important;overflow:hidden!important;background:#090909!important;background-image:none!important;filter:none!important}
   .hero::before,.hero::after{content:none!important;display:none!important}
   .hero-photo-v62{position:relative!important;inset:auto!important;display:block!important;flex:none!important;width:100%!important;height:clamp(315px,110vw,500px)!important;object-fit:cover!important;object-position:${x}% ${y}%!important;transform:none!important;filter:none!important}
-  .hero-brandmark{position:absolute!important;top:16px!important;left:16px!important;right:auto!important;width:66px!important;height:66px!important;z-index:6!important}
+  .hero-brandmark{position:absolute!important;top:16px!important;left:auto!important;right:16px!important;width:66px!important;height:66px!important;z-index:6!important}
   .hero .wrap.hero-copy{position:relative!important;z-index:4!important;width:100%!important;max-width:none!important;min-height:0!important;height:auto!important;margin:0!important;padding:22px 20px 8px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:flex-start!important;background:linear-gradient(#111,#080808)!important;text-shadow:none!important}
   .hero-copy .kicker{max-width:36ch;font-size:10px!important;line-height:1.6!important;letter-spacing:.13em!important;color:#b9bdc4!important}
   .hero-copy h1{font-size:${title}px!important;line-height:.94!important;letter-spacing:-.045em!important;margin:12px 0!important;max-width:100%!important}
