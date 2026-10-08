@@ -1,0 +1,12 @@
+
+@media(max-width:760px){
+  /* Keep the crisp V51 image treatment. Shift the crop window farther down the source
+     (image upward) so the subject fills the empty area beneath the navigation. */
+  .hero{
+    background-position:center -16vw!important;
+    filter:none!important;
+  }
+  /* Remove V52's shadow-lifting screen overlay: it softened the photograph. */
+  .hero::after{content:none!important;display:none!important;}
+  .hero-copy,.hero-brandmark{position:relative;z-index:1;}
+}

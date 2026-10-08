@@ -1,0 +1,12 @@
+
+/* V48: decouple image scale from hero height. V47 used 100% of hero height, so making the hero taller also enlarged the image and preserved the crop. */
+@media(max-width:760px){
+  .hero{
+    min-height:170vh!important;
+    padding:112px 0 48px!important;
+    background-size:auto 145vh!important;
+    background-position:38% top!important;
+    background-repeat:no-repeat!important;
+    background-color:#050505!important;
+  }
+}

@@ -1,0 +1,6 @@
+
+.project[data-type="afgm"] .afgm-actions{margin-top:12px}
+#afgmArchiveOverlay{position:fixed;inset:0;z-index:100001;background:#090909;display:none}
+#afgmArchiveOverlay.open{display:block}
+#afgmArchiveFrame{width:100%;height:100%;border:0;display:block;background:#090909}
+body.afgm-archive-open{overflow:hidden}

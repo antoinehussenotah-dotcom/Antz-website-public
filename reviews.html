@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Reviews | AntZ Music</title>
+<meta content="AntZ Music teaching and performance reviews." name="description"/>
+<style>
+:root{--bg:#090909;--panel:#121212;--panel2:#181818;--line:#2b2b2b;--text:#f5f2ea;--muted:#aaa;--yellow:#fbbc04;--lesson:#2d7cff;--live:#ffcf33}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+header{padding:28px 0 42px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#121212,#090909)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:900;letter-spacing:.12em;text-decoration:none;font-size:20px}
+.back{text-decoration:none;border:1px solid #444;border-radius:999px;padding:9px 14px;color:#ddd;font-weight:750}.back:hover{border-color:#777}
+.hero{padding-top:54px;max-width:780px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:#999;font-size:12px;font-weight:800}h1{font-size:clamp(46px,8vw,86px);line-height:.88;margin:10px 0 22px;letter-spacing:-.055em}.hero p{font-size:18px;color:#bbb;max-width:720px;margin:0}
+.jump{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.jump a{text-decoration:none;border:1px solid #363636;border-radius:999px;padding:10px 15px;font-weight:800;background:#111}.jump a:hover{background:#191919}
+section{padding:58px 0;border-bottom:1px solid #1d1d1d;scroll-margin-top:18px}h2{font-size:clamp(30px,5vw,52px);margin:5px 0 6px;letter-spacing:-.035em}.section-intro{color:#aaa;margin:0 0 25px;max-width:760px}.count{font-size:13px;color:#777;margin-left:7px;font-weight:700}
+.review-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+.review-card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:14px;text-decoration:none;background:#f5f0df;color:#171717;border-radius:19px;padding:18px 20px;min-height:100%;box-shadow:0 8px 30px rgba(0,0,0,.13);transition:.18s ease}
+.review-card:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(0,0,0,.2)}.avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:850;font-size:23px;overflow:hidden;flex:none}.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.review-body{min-width:0}.review-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.review-top strong{font-size:17px;line-height:1.2}.stars{color:var(--yellow);font-size:16px;letter-spacing:.03em;white-space:nowrap}.review-copy{display:block;margin-top:9px;font-size:15px;line-height:1.48;color:#303030}.review-source{display:flex;align-items:center;gap:7px;margin-top:13px;color:#777;font-size:11px;font-weight:700}.review-source b{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#fff;border:1px solid #ddd;color:#4285f4;font-family:Arial,sans-serif;font-size:12px}
+.performance{grid-template-columns:minmax(0,620px)}.note{margin-top:24px;color:#777;font-size:13px}footer{padding:34px 0 54px;color:#777;font-size:13px}
+@media(max-width:800px){.review-list{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 22px,1120px)}header{padding-top:18px}.hero{padding-top:42px}.review-card{grid-template-columns:46px minmax(0,1fr);padding:14px;gap:11px;border-radius:16px}.avatar{width:44px;height:44px;font-size:19px}.review-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.review-top strong{font-size:15.5px}.stars{font-size:14px}.review-copy{font-size:14px;line-height:1.42;margin-top:7px}.review-source{font-size:10px;margin-top:10px}section{padding:42px 0}}
+
+.review-identity{display:flex;flex-direction:column;min-width:0}.review-year{display:block;margin-top:3px;color:#777;font-size:12px;font-weight:750;letter-spacing:.03em}.review-top{align-items:flex-start}.year-divider{grid-column:1/-1;color:#8b8b8b;font-size:13px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin:16px 2px 0}.year-divider:first-child{margin-top:0}
+@media(max-width:560px){.review-year{font-size:11px;margin-top:2px}.year-divider{margin-top:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="topbar"><a class="brand" href="#" onclick="parent.postMessage('antz-close-reviews', '*'); return false;">ANTZ</a><a class="back" href="#" onclick="parent.postMessage('antz-close-reviews', '*'); return false;">← Back to site</a></div>
+<div class="hero"><h1>GOOGLE REVIEWS.</h1>
+<div class="jump"><a href="#teaching-reviews" onclick="document.getElementById('teaching-reviews').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Teaching reviews</a><a href="#performance-reviews" onclick="document.getElementById('performance-reviews').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Performance reviews</a></div></div>
+</div></header>
+<section id="teaching-reviews"><div class="wrap">
+<div class="eyebrow">APGL · Teaching</div><h2>Guitar + piano reviews <span class="count" id="antzTeachingReviewCount">25 reviews</span></h2>
+<div class="review-list" id="antzTeachingReviewList"></div>
+</div></section>
+<section id="performance-reviews"><div class="wrap">
+<div class="eyebrow">AntZ Performances · Live</div><h2>Performance reviews <span class="count">1 review</span></h2>
+<div class="review-list performance"><a aria-label="Open Tiziana Rossetto review on Google" class="review-card" href="https://maps.app.goo.gl/MaXk6fxgDXvLd2xQ7" rel="noopener" target="_blank">
+<span class="avatar" style="background:#9b7a6a">T</span>
+<span class="review-body">
+<span class="review-top"><span class="review-identity"><strong>Tiziana Rossetto</strong><small class="review-year">2025</small></span><span aria-label="5 out of 5 stars" class="stars">★★★★★</span></span>
+<span class="review-copy">We hired Antoine to play the guitar and sing at our son’s Confirmation reception. Antoine was very professional, bringing all equipment, setting up in time and agreeing a playlist with us in advance. His music helped make the event special! Highly recommend!</span>
+<span class="review-source"><b>G</b> Performance review · Open original</span>
+</span>
+</a></div>
+</div></section>
+<footer><div class="wrap">ANTZ MUSIC · Reviews archive</div></footer>
+<script src="reviews-data.js"></script><script src="reviews-archive.js"></script></body></html>

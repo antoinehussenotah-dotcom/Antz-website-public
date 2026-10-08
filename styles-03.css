@@ -1,0 +1,24 @@
+
+.project[data-type="competition"] .competitionthumb{isolation:isolate}
+.project[data-type="competition"] .competition-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  z-index:5;width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;padding-left:4px;
+  background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.72);
+  color:#fff;font-size:24px;line-height:1;
+  box-shadow:0 10px 30px rgba(0,0,0,.32);
+  transition:transform .18s ease,background .18s ease;
+}
+.project[data-type="competition"] .competitionthumb:hover .competition-play{
+  transform:translate(-50%,-50%) scale(1.06);background:rgba(0,0,0,.86)
+}
+.project[data-type="competition"] .competition-actions{margin-top:12px}
+#competitionArchiveOverlay{
+  position:fixed;inset:0;z-index:100000;background:#090909;display:none
+}
+#competitionArchiveOverlay.open{display:block}
+#competitionArchiveFrame{width:100%;height:100%;border:0;display:block;background:#090909}
+body.competition-archive-open{overflow:hidden}
+@media(max-width:640px){
+  .project[data-type="competition"] .competition-play{width:52px;height:52px;font-size:21px}
+}

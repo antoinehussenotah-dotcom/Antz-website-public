@@ -1,0 +1,17 @@
+
+/* V44: pull the main hero photo back so the guitar is visible in-frame. */
+.hero{
+  background-color:#050505!important;
+  background-image:
+    linear-gradient(90deg,rgba(0,0,0,.22) 0%,rgba(0,0,0,.08) 56%,rgba(0,0,0,.12) 100%),
+    url("https://static.wixstatic.com/media/5edab5_1fb2eb80d70544d38137c257b5f3d08f~mv2.jpg")!important;
+  background-size:auto 92%!important;
+  background-position:18% center!important;
+  background-repeat:no-repeat!important;
+}
+@media(max-width:760px){
+  .hero{
+    background-size:auto 88%!important;
+    background-position:24% center!important;
+  }
+}

@@ -1,0 +1,22 @@
+
+/* FINAL override: do not let legacy hero rules auto-zoom the portrait.
+   At <=760px the portrait is sized to the viewport WIDTH, preserving its 2:3 ratio. */
+@media (max-width:760px){
+  .hero{
+    min-height:150vw!important;
+    height:150vw!important;
+    max-height:none!important;
+    padding:0!important;
+    background-size:100% auto!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+    background-color:#050505!important;
+  }
+  .hero .wrap{
+    min-height:150vw!important;
+    padding:0 7vw 8vw!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-end!important;
+  }
+}

@@ -1,0 +1,11 @@
+
+/* V68: stop enlarging the portrait to fill the very tall mobile hero.
+   Fit the source to the phone width instead, preserving substantially more native detail. */
+@media(max-width:760px){
+  .hero{
+    min-height:130vh!important;
+    background-size:100% auto!important;
+    background-position:center top!important;
+    background-color:#050505!important;
+  }
+}

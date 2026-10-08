@@ -1,0 +1,10 @@
+
+@media (max-width:760px){
+  .hero{
+    background-image:url("assets/image-8ba6549f11c8.png")!important;
+    background-size:cover!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+    filter:none!important;
+  }
+}

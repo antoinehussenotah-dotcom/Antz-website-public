@@ -1,0 +1,17 @@
+
+@media(max-width:760px){
+  .hero{background-image:none!important; position:relative!important;}
+  .hero-photo-v62{
+    display:block!important; position:absolute!important; inset:0!important;
+    width:100%!important; height:100%!important; object-fit:cover!important;
+    object-position:center top!important; z-index:0!important;
+    image-rendering:auto!important; transform:translateZ(0);
+  }
+  .hero::before{
+    content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+    background:linear-gradient(90deg,rgba(0,0,0,.44) 0%,rgba(0,0,0,.12) 48%,rgba(0,0,0,.02) 100%);
+  }
+  .hero::after{content:none!important;display:none!important;}
+  .hero-copy,.hero-brandmark,.antz-social-bar{position:relative!important;z-index:2!important;}
+}
+@media(min-width:761px){.hero-photo-v62{display:none!important;}}

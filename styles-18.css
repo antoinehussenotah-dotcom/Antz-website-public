@@ -1,0 +1,21 @@
+
+/* V50: actual uploaded 1536x1024 original embedded directly — no Wix resize/compression. */
+.hero{
+  background-image:
+    linear-gradient(90deg,rgba(0,0,0,.20) 0%,rgba(0,0,0,.04) 58%,rgba(0,0,0,.08) 100%),
+    url("assets/image-c9fe9500475a.jpg")!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  filter:saturate(1.08) contrast(1.05) brightness(1.04);
+}
+/* Keep overlays unaffected visually by the photo treatment. */
+.hero-copy,.hero-brandmark{filter:none!important;}
+@media(max-width:760px){
+  .hero{
+    min-height:165vh!important;
+    padding:112px 0 48px!important;
+    background-size:cover!important;
+    background-position:50% top!important;
+  }
+}

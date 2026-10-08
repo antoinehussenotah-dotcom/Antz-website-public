@@ -1,0 +1,50 @@
+
+.afgm-signal-hero{
+  appearance:none;width:100%;height:auto;min-height:224px;text-align:left;color:#fff;cursor:pointer;
+  padding:14px 18px 15px;margin-bottom:16px;border-radius:16px;overflow:hidden;position:relative;
+  display:flex;flex-direction:column;align-items:center;
+  background:
+    linear-gradient(180deg,rgba(201,169,110,.035),rgba(0,0,0,0)),
+    radial-gradient(circle at 50% 42%,rgba(201,169,110,.11),transparent 48%),
+    #0b0b0b;
+  border:1px solid rgba(201,169,110,.30);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.012),0 12px 34px rgba(0,0,0,.18);
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease
+}
+.afgm-signal-hero:hover,.afgm-signal-hero:focus-visible{
+  transform:translateY(-2px);border-color:rgba(224,193,128,.62);
+  box-shadow:0 14px 34px rgba(0,0,0,.24);outline:none
+}
+.afgm-signal-topline{
+  width:100%;position:relative;z-index:2;display:flex;justify-content:space-between;gap:12px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:9px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:#cfb16f
+}
+.afgm-signal-hero .afgm-main-logo{
+  display:block;margin:8px auto 0;width:min(69%,250px);height:auto;max-height:122px;
+  object-fit:contain;position:relative;z-index:1
+}
+.afgm-signal-hero .afgm-logo-subtitle{
+  position:relative;z-index:2;text-align:center;margin-top:-1px;color:#f0ddaf;
+  font-size:15px;font-weight:900;letter-spacing:.035em;text-shadow:0 2px 8px rgba(0,0,0,.9)
+}
+.afgm-signal-readout{
+  width:100%;position:relative;z-index:2;margin-top:10px;padding-top:10px;
+  border-top:1px solid rgba(201,169,110,.16);display:grid;gap:2px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:9px;line-height:1.4;color:#8e8e8e
+}
+.afgm-signal-readout span:last-child{color:#e5c985;font-weight:900}
+.afgm-branch-logo{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1px;padding:4px 3px 3px
+}
+.afgm-branch-logo img{width:39px;height:34px}
+.afgm-branch-logo-caption{
+  display:block;color:#d9bd7b;font-size:6.5px;line-height:1.05;font-weight:850;
+  letter-spacing:.01em;text-align:center;white-space:nowrap;text-shadow:0 1px 4px rgba(0,0,0,.95)
+}
+@media(max-width:620px){
+  .afgm-signal-hero{min-height:216px}
+  .afgm-signal-topline{font-size:8px}
+}

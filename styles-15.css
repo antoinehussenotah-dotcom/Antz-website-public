@@ -1,0 +1,9 @@
+
+/* V47: keep the old-site tall mobile treatment, but reveal more of the lower photo/guitar neck. */
+@media(max-width:760px){
+  .hero{
+    min-height:170vh!important;
+    background-size:auto 100%!important;
+    background-position:38% center!important;
+  }
+}

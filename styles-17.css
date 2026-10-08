@@ -1,0 +1,12 @@
+
+/* V49: use the ORIGINAL Wix image, not the 980x653 pre-cropped derivative.
+   Previous versions could never reveal more guitar because that derivative had already removed it. */
+@media (max-width:760px){
+  .hero{
+    min-height:165vh!important;
+    background-image:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.12)),url("https://static.wixstatic.com/media/5edab5_1fb2eb80d70544d38137c257b5f3d08f~mv2.jpg ")!important;
+    background-size:cover!important;
+    background-position:center top!important;
+    background-repeat:no-repeat!important;
+  }
+}

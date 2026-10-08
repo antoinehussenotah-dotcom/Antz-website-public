@@ -1,0 +1,5 @@
+
+#reviewArchiveOverlay{position:fixed;inset:0;z-index:99999;background:#090909;display:none}
+#reviewArchiveOverlay.open{display:block}
+#reviewArchiveFrame{width:100%;height:100%;border:0;display:block;background:#090909}
+body.review-archive-open{overflow:hidden}

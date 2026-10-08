@@ -1,0 +1,40 @@
+
+.afgm-logo-crop{
+  position:relative;z-index:1;width:min(74%,272px);height:84px;
+  margin:10px auto 0;overflow:hidden;display:flex;align-items:flex-start;justify-content:center
+}
+.afgm-logo-crop::before{
+  content:"";position:absolute;left:10%;right:10%;bottom:0;height:18px;
+  background:rgba(8,8,8,.98);filter:blur(6px);z-index:2;pointer-events:none
+}
+.afgm-logo-crop::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:46px;
+  background:linear-gradient(to top,rgba(8,8,8,1) 0%,rgba(8,8,8,.99) 42%,rgba(8,8,8,.78) 76%,rgba(8,8,8,0) 100%);
+  pointer-events:none;z-index:3
+}
+.afgm-logo-crop .afgm-main-logo{
+  width:100%;height:auto;max-height:none;margin:0;
+  transform:translateY(-11px) scale(1.045);
+  transform-origin:top center;object-fit:contain;position:relative;z-index:1
+}
+.afgm-logo-tag{
+  position:relative;z-index:4;margin-top:-1px;
+  color:#e7c881;font-size:18px;font-weight:950;letter-spacing:.12em;
+  text-align:center;text-transform:uppercase;
+  text-shadow:0 2px 10px rgba(0,0,0,.95)
+}
+.afgm-logo-meaning{
+  position:relative;z-index:4;margin-top:-1px;
+  color:#f4dfac;font-size:16px;font-weight:950;letter-spacing:.14em;
+  text-align:center;text-transform:uppercase;
+  text-shadow:0 2px 8px rgba(0,0,0,.92)
+}
+.afgm-signal-readout{margin-top:12px}
+@media(max-width:620px){
+  .afgm-logo-crop{height:80px;width:min(78%,252px)}
+  .afgm-logo-crop::before{left:8%;right:8%;height:16px}
+  .afgm-logo-crop::after{height:44px}
+  .afgm-logo-crop .afgm-main-logo{transform:translateY(-10px) scale(1.05)}
+  .afgm-logo-tag{font-size:16px;letter-spacing:.10em}
+  .afgm-logo-meaning{font-size:14px;letter-spacing:.11em}
+}

@@ -1,0 +1,12 @@
+
+@media(max-width:760px){
+  .hero-photo-v62{
+    display:block!important;
+    width:100%!important;height:100%!important;
+    object-fit:cover!important;
+    object-position:31% center!important;
+    filter:none!important;
+    transform:none!important;
+  }
+  .hero{background:#050505!important;}
+}

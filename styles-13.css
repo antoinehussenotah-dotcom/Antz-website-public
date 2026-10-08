@@ -1,0 +1,15 @@
+
+/* V45: show the complete source hero photograph instead of cropping it on mobile. */
+.hero{
+  background-size:contain!important;
+  background-position:center center!important;
+  background-color:#050505!important;
+}
+@media(max-width:760px){
+  .hero{
+    min-height:81vh!important;
+    background-size:contain!important;
+    background-position:center center!important;
+    background-color:#050505!important;
+  }
+}

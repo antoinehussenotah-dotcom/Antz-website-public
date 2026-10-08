@@ -1,0 +1,62 @@
+
+.afgm-project-card{position:relative}
+.afgm-main-logo-frame{
+  position:relative;height:176px;margin-bottom:16px;border-radius:16px;overflow:hidden;
+  display:grid;place-items:center;background:
+    radial-gradient(circle at 50% 42%,rgba(201,169,110,.13),transparent 47%),
+    linear-gradient(145deg,#111,#090909);
+  border:1px solid rgba(201,169,110,.24);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.015),0 12px 34px rgba(0,0,0,.18)
+}
+.afgm-main-logo-glow{
+  position:absolute;width:58%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,169,110,.14),rgba(201,169,110,0) 68%);
+  filter:blur(7px)
+}
+.afgm-main-logo{
+  position:relative;z-index:1;width:min(72%,260px);height:auto;max-height:138px;
+  object-fit:contain;filter:sepia(1) saturate(1.65) hue-rotate(350deg) brightness(1.1)
+    drop-shadow(0 7px 18px rgba(201,169,110,.13))
+}
+.afgm-brand-branches{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 14px
+}
+.afgm-branch{
+  appearance:none;width:100%;display:flex;align-items:center;gap:12px;text-align:left;
+  padding:12px;border:1px solid #2b2b2b;border-radius:13px;background:
+    linear-gradient(145deg,#121212,#0d0d0d);color:#eee;cursor:pointer;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease
+}
+.afgm-branch:hover{
+  transform:translateY(-2px);border-color:rgba(201,169,110,.5);
+  background:linear-gradient(145deg,#15140f,#0e0e0d);
+  box-shadow:0 10px 25px rgba(0,0,0,.18)
+}
+.afgm-branch-logo{
+  width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;border-radius:11px;
+  border:1px solid rgba(201,169,110,.25);
+  background:radial-gradient(circle at 50% 45%,rgba(201,169,110,.11),transparent 65%),#0a0a0a
+}
+.afgm-branch-logo img{
+  width:42px;height:42px;object-fit:contain;
+  filter:sepia(1) saturate(1.7) hue-rotate(350deg) brightness(1.12)
+}
+.afgm-branch-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
+.afgm-branch-kicker{
+  display:inline-flex;align-self:flex-start;
+  color:#17120a;background:#d8b873;border:1px solid #f0d49a;
+  border-radius:999px;padding:4px 7px;
+  font-size:10px;line-height:1;font-weight:950;letter-spacing:.14em;text-transform:uppercase;
+  box-shadow:0 0 18px rgba(216,184,115,.12)
+}
+.afgm-branch strong{
+  color:#fff;font-size:15px;line-height:1.18;font-weight:900;margin-top:2px
+}
+.afgm-branch-link{
+  color:#efd79f;font-size:11px;line-height:1.15;font-weight:900;margin-top:5px;
+  letter-spacing:.01em
+}
+@media(max-width:620px){
+  .afgm-brand-branches{grid-template-columns:1fr}
+  .afgm-main-logo-frame{height:158px}
+}

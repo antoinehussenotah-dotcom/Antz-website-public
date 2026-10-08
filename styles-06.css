@@ -1,0 +1,76 @@
+
+.newsdesk-panel{padding:0;overflow:hidden;min-height:100%;display:flex;flex-direction:column}
+.newsdesk-head{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
+  padding:18px 18px 13px;border-bottom:1px solid #242424
+}
+.newsdesk-head h3{margin:3px 0 0;font-size:22px;letter-spacing:-.025em}
+.newsdesk-counter{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color:#767676;font-size:11px;letter-spacing:.08em;padding-top:4px;white-space:nowrap
+}
+.newsdesk-stage{position:relative;min-height:230px;flex:1}
+.newsdesk-story{
+  position:absolute;inset:0;padding:18px;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  grid-template-rows:auto auto 1fr auto;column-gap:18px;align-content:start;
+  opacity:0;transform:translateX(14px);pointer-events:none;
+  transition:opacity .5s ease,transform .5s ease
+}
+.newsdesk-story.active{opacity:1;transform:translateX(0);pointer-events:auto}
+.newsdesk-meta{
+  grid-column:1/3;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  font-size:10px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:#7f7f7f
+}
+.newsdesk-meta .category{color:#d5d5d5}
+.newsdesk-story h4{
+  grid-column:1/3;margin:10px 0 7px;font-size:clamp(24px,3vw,34px);
+  line-height:.98;letter-spacing:-.04em;color:#fff
+}
+.newsdesk-deck{grid-column:1/3;margin:0;color:#b9b9b9;line-height:1.55;max-width:62ch}
+.newsdesk-footer{
+  grid-column:1/3;display:flex;justify-content:space-between;align-items:flex-end;
+  gap:14px;margin-top:16px;padding-top:13px;border-top:1px solid #202020
+}
+.newsdesk-file{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color:#707070;font-size:10px;letter-spacing:.06em
+}
+.newsdesk-link{
+  border:1px solid #3b3b3b;background:#151515;color:#fff;border-radius:999px;
+  padding:8px 11px;font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap
+}
+.newsdesk-nav{
+  border-top:1px solid #232323;padding:10px 16px;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;background:#0e0e0e
+}
+.newsdesk-dots{display:flex;gap:7px;align-items:center}
+.newsdesk-dot{width:7px;height:7px;border:0;border-radius:50%;background:#383838;padding:0;cursor:pointer}
+.newsdesk-dot.active{background:#e5e5e5}
+.newsdesk-next{border:0;background:transparent;color:#aaa;font:inherit;font-size:12px;font-weight:800;cursor:pointer}
+.encrypted-presence{
+  border-top:1px solid #2a2a2a;background:#090d09;padding:13px 16px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px
+}
+.encrypted-presence-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.encrypted-kicker{
+  color:#74a878;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:9px;font-weight:800;letter-spacing:.14em
+}
+.encrypted-presence strong{
+  color:#c7ffc9;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:13px;letter-spacing:.02em
+}
+.encrypted-presence small{
+  color:#6f8e71;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:560px
+}
+.encrypted-open{
+  flex:0 0 auto;border:1px solid #28452c;background:#0f1710;color:#b8ffba;
+  border-radius:999px;padding:8px 11px;font:inherit;font-size:11px;font-weight:850;cursor:pointer
+}
+@media(max-width:700px){
+  .newsdesk-stage{min-height:270px}
+  .encrypted-presence{align-items:flex-start;flex-direction:column}
+  .encrypted-open{align-self:flex-start}
+  .encrypted-presence small{white-space:normal}
+}
