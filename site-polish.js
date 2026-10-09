@@ -1,0 +1,25 @@
+/* AntZ V6.5 — responsive layout refinements and WhatsApp. Loaded after V6.4 branding. */
+(() => {
+ 'use strict';
+ const style=document.createElement('style');
+ style.setAttribute('data-antz-polish','v6.5');
+ style.textContent="\n@media(max-width:760px){\n .reviewpanel{min-width:0!important;overflow:hidden!important}\n #reviewCarousel,.authentic-reviews{min-width:0!important;max-width:100%!important;box-sizing:border-box!important;overscroll-behavior-inline:contain!important}\n #reviewCarousel .review-ui-card,.authentic-reviews .review-ui-card{flex:0 0 calc(100% - 8px)!important;width:calc(100% - 8px)!important;max-width:calc(100% - 8px)!important;min-width:0!important;box-sizing:border-box!important;grid-template-columns:44px minmax(0,1fr)!important;gap:11px!important;padding:13px!important}\n .review-ui-card .review-ui-body{display:flex!important;flex-direction:column!important;min-width:0!important;overflow-wrap:anywhere!important}\n .review-ui-card .review-ui-stars{font-size:clamp(13px,3.7vw,18px)!important;letter-spacing:0!important;line-height:1.15!important;display:block!important;max-width:100%!important;margin:2px 0 7px!important;white-space:nowrap!important}\n .review-ui-card .review-ui-stars span{letter-spacing:0!important}\n .review-ui-card .review-ui-name{overflow-wrap:anywhere!important}\n .afgm-brand-branches{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:10px!important;width:100%!important;min-width:0!important}\n .afgm-branch{min-width:0!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;gap:12px!important;text-align:left!important}\n .afgm-branch-copy{min-width:0!important;flex:1!important;overflow-wrap:anywhere!important}\n .afgm-branch strong{font-size:clamp(14px,3.8vw,17px)!important;line-height:1.24!important;overflow-wrap:anywhere!important}\n .afgm-branch-link{white-space:normal!important;overflow-wrap:anywhere!important}\n}\n@media(min-width:761px) and (max-width:1100px){.afgm-brand-branches{grid-template-columns:minmax(0,1fr)!important;gap:10px!important}.afgm-branch{min-width:0!important;width:100%!important}}\n@media(min-width:1280px){\n :root{--max:1340px}\n body{font-size:17px!important}\n section .intro{font-size:clamp(18px,1.2vw,21px)!important;line-height:1.55!important}\n section .card>p,section .card .afgm-branch-link{line-height:1.55!important}\n .projects>.card h3,.bandcard h3{font-size:clamp(21px,1.6vw,27px)!important;line-height:1.18!important}\n .card{min-width:0!important}\n}\n@media(min-width:1600px){\n .hero .wrap.hero-copy{width:min(44vw,615px)!important;max-width:615px!important;margin-right:6vw!important}\n .hero-copy p{font-size:19px!important;line-height:1.55!important}\n .hero .hero-copy h1{font-size:clamp(75px,5.2vw,96px)!important}\n .projects>.card{padding:28px!important}\n}";
+ document.head.append(style);
+ const whatsappURL='https://wa.me/447901993421';
+ const whatsappIcon='data:image/svg+xml;charset=UTF-8,'+encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 128\"><circle cx=\"64\" cy=\"64\" r=\"64\" fill=\"#25D366\"/><path fill=\"#fff\" d=\"M64 22a41.5 41.5 0 0 0-35.6 62.7L22 106l22-5.8A41.6 41.6 0 1 0 64 22Zm0 76a34.2 34.2 0 0 1-17.5-4.8l-1.2-.7-13.1 3.5 3.5-12.8-.8-1.3A34.5 34.5 0 1 1 64 98Zm19-25.8c-1-.5-6.3-3.1-7.3-3.4s-1.7-.5-2.4.5-2.8 3.4-3.5 4.1-1.3.8-2.3.2a27.7 27.7 0 0 1-8.2-5.1 31.3 31.3 0 0 1-5.8-7.2c-.6-1-.1-1.6.5-2.2.6-.6 1.3-1.6 1.8-2.3.5-.7.8-1.3 1.2-2 .3-.7.2-1.4-.1-2.1-.3-.7-2.4-5.8-3.3-7.9-.9-2-1.8-1.8-2.5-1.8h-2.1c-.8 0-2 .3-3 1.4-1 1.1-4 3.9-4 9.4s4.1 10.8 4.7 11.5c.5.8 8 12.3 19.5 17.2 2.7 1.2 4.9 1.8 6.6 2.3 2.8.9 5.4.8 7.5.5 2.3-.4 6.3-2.6 7.2-5.1.9-2.5.9-4.7.7-5.2-.3-.5-1-.8-2-1.3Z\"/></svg>");
+ const heroLinks=document.querySelector('.hero .antz-social-bar');
+ if(heroLinks){
+   let a=heroLinks.querySelector('a.whatsapp');
+   if(!a){a=document.createElement('a');a.className='brand whatsapp';heroLinks.append(a);}
+   a.href=whatsappURL;a.title='WhatsApp';a.setAttribute('aria-label','WhatsApp');
+   a.target='_blank';a.rel='noopener noreferrer';
+   const img=document.createElement('img');img.className='antz-official-icon';img.alt='';img.setAttribute('aria-hidden','true');img.src=whatsappIcon;a.replaceChildren(img);
+ }
+ const footer=document.querySelector('.footer-contact-icons a[aria-label="WhatsApp"]');
+ if(footer){
+   footer.href=whatsappURL;footer.target='_blank';footer.rel='noopener noreferrer';footer.classList.add('antz-official-brand-link');
+   const img=document.createElement('img');img.className='antz-official-icon';img.alt='';img.setAttribute('aria-hidden','true');img.src=whatsappIcon;footer.replaceChildren(img);
+ }
+ const remixes=document.querySelector('.afgm-branch[data-afgm-target="remixes"] .afgm-branch-logo img');
+ if(remixes){remixes.src='assets/image-207a6158de09.png';remixes.alt='AFGM';}
+})();
