@@ -4,6 +4,14 @@ window.ANTZ_REVIEW_DATA = {
   "googleReviewsUrl": "https://maps.app.goo.gl/pMG2JZh64t93f5Rj6?g_st=ac",
   "apgl": [
     {
+      "name": "Anastasia Sotiropoulou",
+      "stars": 5,
+      "text": "My son has been taking electric guitar lessons with Antoine and is absolutely loving them! It’s lovely to see his enthusiasm and confidence growing with every lesson. Antoine makes learning fun and engaging, and my son always looks forward to his sessions. Highly recommend!",
+      "year": 2026,
+      "initial": "A",
+      "avatarColor": "#079fa3"
+    },
+    {
       "name": "Ana",
       "stars": 5,
       "text": "Antoine is a very engaging guitar teacher. My son has really enjoyed his first month of guitar lesson. We will continue to book many more.",
