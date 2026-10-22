@@ -260,7 +260,7 @@
 <button class="afgm-promo-close" data-afgm-promo-close type="button" aria-label="Close AFGM video">×</button>
 <div class="afgm-promo-topline">AFGM // FEATURED PROMO</div>
 <video id="afgmPromoVideo" controls playsinline preload="none" poster="assets/image-207a6158de09.png" aria-label="AFGM film and game music promotional video">
-<source id="afgmPromoSource" data-src="assets/afgm-website-promo.mp4" type="video/mp4"/>
+<source id="afgmPromoSource" data-src="assets/2026-10-22-053840203.mp4" type="video/mp4"/>
 Your browser does not support HTML5 video.
 </video></div></div>
 <script>
@@ -271,7 +271,7 @@ Your browser does not support HTML5 video.
   const source=document.getElementById('afgmPromoSource');
   if(!launch||!modal||!video||!source)return;
   let previousOverflow='';
-  fetch('assets/afgm-website-promo.mp4',{method:'HEAD'})
+  fetch('assets/2026-10-22-053840203.mp4',{method:'HEAD'})
     .then(response=>{
       const contentType=response.headers.get('content-type')||'';
       if(response.ok&&!/text\/html/i.test(contentType))launch.hidden=false;
